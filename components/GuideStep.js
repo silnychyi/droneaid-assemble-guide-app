@@ -13,7 +13,12 @@ const GuideStep = () => {
   if (!step) return null;
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    // small delay to ensure we scroll to the top after animation is complete
+    const timeout = setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 100);
+
+    return () => clearTimeout(timeout);
   }, [currentStep]);
 
   useEffect(() => {

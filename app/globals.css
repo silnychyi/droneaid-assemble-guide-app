@@ -38,8 +38,10 @@ h6 {
 
 .btn-primary {
   background-color: var(--color-yellow);
-  &:hover {
-    background-color: var(--color-yellow-hover);
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--color-yellow-hover);
+    }
   }
   @apply shadow text-black rounded-full py-3 px-8 cursor-pointer transition-colors duration-300 ease-in-out font-medium;
 }

@@ -14,7 +14,7 @@ const ProgressBar = () => {
   return (
     <div className="fixed top-0 left-0 right-0 px-4 py-1 bg-white z-10">
       <div className="max-w-2xl mx-auto flex items-center gap-4">
-        <div className="flex-1 h-2 bg-gray-200 rounded-full overflow-hidden">
+        <div className="flex-1 h-3 bg-gray-200 rounded-full overflow-hidden">
           <motion.div
             className="h-full bg-yellow rounded-full"
             initial={{ width: 0 }}
@@ -24,7 +24,7 @@ const ProgressBar = () => {
         </div>
         <button
           onClick={openOverview}
-          className="shrink-0 px-2 py-3 hover:bg-gray-100 rounded-full transition-colors"
+          className="shrink-0 px-2 py-3 hover:bg-gray-100 transition-colors w-10 h-10 flex items-center justify-center rounded-full cursor-pointer"
           aria-label="Open step overview"
         >
           <svg
